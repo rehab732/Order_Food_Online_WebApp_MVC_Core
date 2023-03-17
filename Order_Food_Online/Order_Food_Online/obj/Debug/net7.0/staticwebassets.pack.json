@@ -1,0 +1,533 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Order_Food_Online.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Order_Food_Online.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\EDU\\EduNSWACTFoundation-Bold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\EDU\\EduNSWACTFoundation-Bold.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\EDU\\EduNSWACTFoundation-Medium.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\EDU\\EduNSWACTFoundation-Medium.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\EDU\\EduNSWACTFoundation-Regular.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\EDU\\EduNSWACTFoundation-Regular.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\EDU\\EduNSWACTFoundation-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\EDU\\EduNSWACTFoundation-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\EDU\\EduNSWACTFoundation-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\EDU\\EduNSWACTFoundation-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Poppins\\UbuntuTitling-Bold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Poppins\\UbuntuTitling-Bold.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Ubuntu\\Ubuntu-Title.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Ubuntu\\Ubuntu-Title.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\Fonts\\Ubuntu\\Ubuntu-Titlebold.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Ubuntu\\Ubuntu-Titlebold.ttf"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\about-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about-2.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\apple-touch-icon.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\chefs\\chefs-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\chefs\\chefs-1.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\chefs\\chefs-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\chefs\\chefs-2.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\chefs\\chefs-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\chefs\\chefs-3.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\events-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\events-1.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\events-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\events-2.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\events-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\events-3.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-1.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-2.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-3.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-4.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-5.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-6.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-7.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\gallery\\gallery-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\gallery-8.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\hero-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero-img.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\menu\\menu-item-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-1.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\menu\\menu-item-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-2.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\menu\\menu-item-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-3.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\menu\\menu-item-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-4.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\menu\\menu-item-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-5.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\menu\\menu-item-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-6.png"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\reservation.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\reservation.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\stats-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\stats-bg.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\team-shape.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-shape.svg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\testimonials\\testimonials-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-1.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\testimonials\\testimonials-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-2.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\testimonials\\testimonials-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-3.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\img\\testimonials\\testimonials-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonials\\testimonials-4.jpg"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\scss\\Readme.txt",
+      "PackagePath": "staticwebassets\\assets\\scss\\Readme.txt"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\aos\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\aos\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\php-email-form\\validate.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\purecounter\\purecounter_vanilla.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\purecounter\\purecounter_vanilla.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\forms\\Readme.txt",
+      "PackagePath": "staticwebassets\\forms\\Readme.txt"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\forms\\book-a-table.php",
+      "PackagePath": "staticwebassets\\forms\\book-a-table.php"
+    },
+    {
+      "Id": "E:\\ITI\\ITI Projects\\Order_Food_Online_WebApp_MVC_Core\\Order_Food_Online\\Order_Food_Online\\wwwroot\\forms\\contact.php",
+      "PackagePath": "staticwebassets\\forms\\contact.php"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Order_Food_Online.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Order_Food_Online.props",
+      "PackagePath": "build\\Order_Food_Online.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Order_Food_Online.props",
+      "PackagePath": "buildMultiTargeting\\Order_Food_Online.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Order_Food_Online.props",
+      "PackagePath": "buildTransitive\\Order_Food_Online.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
