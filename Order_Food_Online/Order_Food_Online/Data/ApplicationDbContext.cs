@@ -26,9 +26,17 @@ namespace Order_Food_Online.Data
             {
 
                 entity.HasKey(k => new { k.OrderId, k.ItemId });
+              
             });
             // modelBuilder.Entity<IdentityUserLogin<string>>()
             //.HasNoKey();
+
+            modelBuilder.Entity<OrderItems>()
+                .HasOne(o => o.Orders)
+                .WithMany(i => i.OrderItems)
+                .HasForeignKey(i => i.OrderId)
+                .OnDelete(DeleteBehavior.NoAction);
+
             base.OnModelCreating(modelBuilder);
         }
         

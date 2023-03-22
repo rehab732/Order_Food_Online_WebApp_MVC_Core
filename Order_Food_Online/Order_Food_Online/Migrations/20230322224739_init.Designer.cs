@@ -12,8 +12,8 @@ using Order_Food_Online.Data;
 namespace Order_Food_Online.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230319172904_initial")]
-    partial class initial
+    [Migration("20230322224739_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -315,12 +315,12 @@ namespace Order_Food_Online.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("ResturantsId")
+                    b.Property<int>("ResturantId")
                         .HasColumnType("int");
 
                     b.HasKey("ItemsId");
 
-                    b.HasIndex("ResturantsId");
+                    b.HasIndex("ResturantId");
 
                     b.ToTable("Items");
                 });
@@ -454,28 +454,32 @@ namespace Order_Food_Online.Migrations
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Items", b =>
                 {
-                    b.HasOne("Order_Food_Online.Areas.Resturant.Models.Resturants", null)
+                    b.HasOne("Order_Food_Online.Areas.Resturant.Models.Resturants", "Resturants")
                         .WithMany("items")
-                        .HasForeignKey("ResturantsId");
+                        .HasForeignKey("ResturantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Resturants");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.OrderItems", b =>
                 {
-                    b.HasOne("Order_Food_Online.Areas.Resturant.Models.Items", "Item")
-                        .WithMany()
+                    b.HasOne("Order_Food_Online.Areas.Resturant.Models.Items", "Items")
+                        .WithMany("OrderItems")
                         .HasForeignKey("ItemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Order_Food_Online.Areas.Resturant.Models.Orders", "Order")
+                    b.HasOne("Order_Food_Online.Areas.Resturant.Models.Orders", "Orders")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.Navigation("Item");
+                    b.Navigation("Items");
 
-                    b.Navigation("Order");
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Orders", b =>
@@ -500,6 +504,11 @@ namespace Order_Food_Online.Migrations
             modelBuilder.Entity("Order_Food_Online.Areas.Customer.Models.Customers", b =>
                 {
                     b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Items", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Orders", b =>

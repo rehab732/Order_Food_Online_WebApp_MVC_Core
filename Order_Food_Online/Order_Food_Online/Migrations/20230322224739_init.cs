@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Order_Food_Online.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -215,16 +215,17 @@ namespace Order_Food_Online.Migrations
                     ItemName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ResturantsId = table.Column<int>(type: "int", nullable: true)
+                    ResturantId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Items", x => x.ItemsId);
                     table.ForeignKey(
-                        name: "FK_Items_Resturants_ResturantsId",
-                        column: x => x.ResturantsId,
+                        name: "FK_Items_Resturants_ResturantId",
+                        column: x => x.ResturantId,
                         principalTable: "Resturants",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -277,8 +278,7 @@ namespace Order_Food_Online.Migrations
                         name: "FK_OrdersItems_Orders_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -321,9 +321,9 @@ namespace Order_Food_Online.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Items_ResturantsId",
+                name: "IX_Items_ResturantId",
                 table: "Items",
-                column: "ResturantsId");
+                column: "ResturantId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Orders_CustomerId",

@@ -1,11 +1,14 @@
 ﻿using Order_Food_Online.Areas.Resturant.Models;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Order_Food_Online.Areas.Customer.Models
 {
     public class Customers
     {
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Must Enter Your First Name")]
@@ -40,7 +43,7 @@ namespace Order_Food_Online.Areas.Customer.Models
         [Required]
         public Gender Gender { get; set; }
 
-        public List<Orders> Orders { get; set; }
+        public virtual List<Orders> Orders { get; set; }
 
     }
 }

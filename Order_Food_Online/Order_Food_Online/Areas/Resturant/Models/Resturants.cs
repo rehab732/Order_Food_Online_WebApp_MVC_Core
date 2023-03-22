@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Order_Food_Online.Areas.Resturant.Models
 {
     public class Resturants
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
@@ -14,6 +16,6 @@ namespace Order_Food_Online.Areas.Resturant.Models
         [Required]
         public string RestLocation { get; set; } = string.Empty;
 
-        public List<Items> items { get; set; }
+        public virtual List<Items> items { get; set; }
     }
 }
