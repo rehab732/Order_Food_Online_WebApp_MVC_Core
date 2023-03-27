@@ -58,6 +58,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("Resturant/Items/Create")]
         public async Task<IActionResult> Create([Bind("ItemsId,ItemName,ImageUrl,Price,ResturantId")] Items items)
         {
             if (ModelState.IsValid)
@@ -71,6 +72,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         }
 
         // GET: Resturant/Items/Edit/5
+        [Route("Resturant/Items/Edit")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Items == null)
@@ -92,6 +94,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("Resturant/Items/Edit")]
         public async Task<IActionResult> Edit(int id, [Bind("ItemsId,ItemName,ImageUrl,Price,ResturantId")] Items items)
         {
             if (id != items.ItemsId)
@@ -124,6 +127,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         }
 
         // GET: Resturant/Items/Delete/5
+        [Route("Resturant/Items/Delete")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Items == null)
@@ -145,6 +149,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         // POST: Resturant/Items/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Route("Resturant/Items/Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Items == null)
