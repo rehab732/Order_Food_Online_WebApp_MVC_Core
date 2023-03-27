@@ -13,9 +13,10 @@ namespace Order_Food_Online.Areas.Resturant.Models
         [MaxLength(100)]
         public string RestName { get; set; } = string.Empty;
         public City City { get; set; }
+
         [Required]
         public string RestLocation { get; set; } = string.Empty;
 
-        public virtual List<Items> items { get; set; }
+        public virtual List<Items>? items { get; set; }
     }
 }

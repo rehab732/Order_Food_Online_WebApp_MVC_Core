@@ -27,7 +27,6 @@
         RedSea, 
         Sharqia, 
         Sohag, 
-        South Sinai
-
+        SouthSinai
     }
 }
