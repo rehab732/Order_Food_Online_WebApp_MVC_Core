@@ -95,9 +95,9 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Resturant/Items/Edit")]
-        public async Task<IActionResult> Edit(int id, [Bind("ItemsId,ItemName,ImageUrl,Price,ResturantId")] Items items)
+        public async Task<IActionResult> Edit(int ItemsId, [Bind("ItemsId,ItemName,ImageUrl,Price,ResturantId")] Items items)
         {
-            if (id != items.ItemsId)
+            if (ItemsId != items.ItemsId)
             {
                 return NotFound();
             }
@@ -150,13 +150,13 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Route("Resturant/Items/Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int ItemsId)
         {
             if (_context.Items == null)
             {
                 return Problem("Entity set 'ApplicationDbContext.Items'  is null.");
             }
-            var items = await _context.Items.FindAsync(id);
+            var items = await _context.Items.FindAsync(ItemsId);
             if (items != null)
             {
                 _context.Items.Remove(items);
