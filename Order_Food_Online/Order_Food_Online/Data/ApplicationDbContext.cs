@@ -13,12 +13,12 @@ namespace Order_Food_Online.Data
             : base(options)
         {
         }
-        DbSet<Customers> Customers { get; set; }
-        DbSet<Orders> Orders { get; set; }
-        DbSet<OrderItems> OrdersItems { get; set; }
-        DbSet<Resturants> Resturants { get; set; }
-        DbSet<Items> Items { get; set; }
-        DbSet<Admins> Admins { get; set; }
+        public DbSet<Customers> Customers { get; set; }
+        public DbSet<Orders> Orders { get; set; }
+        public DbSet<OrderItems> OrdersItems { get; set; }
+        public DbSet<Resturants> Resturants { get; set; }
+        public DbSet<Items> Items { get; set; }
+        public DbSet<Admins> Admins { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

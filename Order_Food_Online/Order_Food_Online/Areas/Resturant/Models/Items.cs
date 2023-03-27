@@ -21,9 +21,9 @@ namespace Order_Food_Online.Areas.Resturant.Models
 
         [ForeignKey("Resturants")]
         public int ResturantId { get; set; }
-        public virtual Resturants Resturants { get; set; }
+        public virtual Resturants? Resturants { get; set; }
 
-        public virtual List<OrderItems> OrderItems { get; set; }
+        public virtual List<OrderItems>? OrderItems { get; set; }
 
     }
 }
