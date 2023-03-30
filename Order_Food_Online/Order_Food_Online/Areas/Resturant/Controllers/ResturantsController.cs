@@ -6,40 +6,38 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Order_Food_Online.Areas.Resturant.Models;
-using Order_Food_Online.Data;
+using Order_Food_Online.Repository;
 
 namespace Order_Food_Online.Areas.Resturant.Controllers
 {
     [Area("Resturant")]
     public class ResturantsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private ICRUDRepository<Resturants> crudRepository { get; }
 
-        public ResturantsController(ApplicationDbContext context)
-        {
-            _context = context;
+        public ResturantsController(ICRUDRepository<Resturants> cRUDRepository)
+        {   
+            crudRepository = cRUDRepository;
         }
 
         // GET: Resturant/Resturants
         [Route("Resturant/Resturants")]
         public async Task<IActionResult> Index()
         {
-              return _context.Resturants != null ? 
-                          View(await _context.Resturants.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Resturants'  is null.");
+            return View(crudRepository.GetAll().ToList());
         }
 
         // GET: Resturant/Resturants/Details/5
         [Route("Resturant/Resturants/Details")]
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Resturants == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var resturants = await _context.Resturants
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var resturants = crudRepository.GetDetails((int)id);
+                
             if (resturants == null)
             {
                 return NotFound();
@@ -65,8 +63,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(resturants);
-                await _context.SaveChangesAsync();
+                crudRepository.Insert(resturants);
                 return RedirectToAction(nameof(Index));
             }
             return View(resturants);
@@ -76,16 +73,18 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         [Route("Resturant/Resturants/Edit")]
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Resturants == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var resturants = await _context.Resturants.FindAsync(id);
+            var resturants = crudRepository.GetDetails((int)id);
+
             if (resturants == null)
             {
                 return NotFound();
             }
+
             return View(resturants);
         }
 
@@ -106,8 +105,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
             {
                 try
                 {
-                    _context.Update(resturants);
-                    await _context.SaveChangesAsync();
+                    crudRepository.Update(id, resturants);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -129,13 +127,13 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         [Route("Resturant/Resturants/Delete")]
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Resturants == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var resturants = await _context.Resturants
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var resturants = crudRepository.GetDetails((int)id);
+
             if (resturants == null)
             {
                 return NotFound();
@@ -150,23 +148,20 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         [Route("Resturant/Resturants/Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Resturants == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Resturants'  is null.");
-            }
-            var resturants = await _context.Resturants.FindAsync(id);
+            
+            var resturants = crudRepository.GetDetails(id);
+
             if (resturants != null)
             {
-                _context.Resturants.Remove(resturants);
+                crudRepository.Delete(resturants);
             }
             
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ResturantsExists(int id)
         {
-          return (_context.Resturants?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (crudRepository.GetAll().Any(e => e.Id == id));
         }
     }
 }

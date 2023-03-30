@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Order_Food_Online.Areas.Resturant.Models;
 using Order_Food_Online.Data;
-using Order_Food_Online.Models;
+using Order_Food_Online.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,12 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
    .AddEntityFrameworkStores<ApplicationDbContext>();
+
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ICRUDRepository<Items>, ItemRepoService>();
+builder.Services.AddScoped<ICRUDRepository<Resturants>, ResturantRepoService>();
+
 
 var app = builder.Build();
 
