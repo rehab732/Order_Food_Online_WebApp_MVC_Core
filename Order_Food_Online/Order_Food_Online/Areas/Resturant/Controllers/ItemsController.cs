@@ -26,6 +26,12 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
             return View(ItemRepoService.GetAll());
         }
 
+        [Route("Resturant/Items/Resto")]
+        public async Task<IActionResult> Resto(int id)
+        {
+            return View(ItemRepoService.GetAll(id));
+        }
+
         // GET: Resturant/Items/Details/5
         [Route("Resturant/Items/Details")]
         public async Task<IActionResult> Details(int? id)
@@ -48,8 +54,9 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         [Route("Resturant/Items/Create")]
         public IActionResult Create()
         {
-            ViewData["ResturantId"] = new SelectList(ResturantRepoService.GetAll(), "Id", "RestLocation");
+            ViewData["ResturantId"] = new SelectList(ResturantRepoService.GetAll(), "Id", "RestName");
             return View();
+
         }
 
         // POST: Resturant/Items/Create

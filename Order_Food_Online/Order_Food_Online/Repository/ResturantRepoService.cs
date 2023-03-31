@@ -24,6 +24,11 @@ namespace Order_Food_Online.Repository
             return _context.Resturants.ToList();
         }
 
+        public List<Resturants> GetAll(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Resturants GetDetails(int id)
         {
             return _context.Resturants.FirstOrDefault(r=> r.Id == id);

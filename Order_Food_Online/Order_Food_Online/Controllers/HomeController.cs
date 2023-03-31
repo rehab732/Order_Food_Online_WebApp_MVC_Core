@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Order_Food_Online.Areas.Resturant.Models;
 using Order_Food_Online.Models;
+using Order_Food_Online.Repository;
 using System.Diagnostics;
 
 namespace Order_Food_Online.Controllers
@@ -7,15 +9,18 @@ namespace Order_Food_Online.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private ICRUDRepository<Resturants> crudRepository { get; }
 
-        public HomeController(ILogger<HomeController> logger)
+      
+        public HomeController(ILogger<HomeController> logger, ICRUDRepository<Resturants> cRUDRepository)
         {
+            crudRepository = cRUDRepository;
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return View(crudRepository.GetAll().ToList());
         }
 
         public IActionResult Privacy()
