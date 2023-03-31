@@ -3,6 +3,8 @@
     public interface ICRUDRepository<T>
     {
         public List<T> GetAll();
+        public List<T> GetAll(int id);
+
 
         public T GetDetails(int id);
 

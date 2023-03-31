@@ -4,10 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Order_Food_Online.Areas.Admin.Models;
 using Order_Food_Online.Areas.Customer.Models;
 using Order_Food_Online.Areas.Resturant.Models;
+using Order_Food_Online.Models;
 
 namespace Order_Food_Online.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -22,6 +23,16 @@ namespace Order_Food_Online.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ApplicationUser>().ToTable("Users", "security");
+            modelBuilder.Entity<IdentityRole>().ToTable("Roles", "security");
+            modelBuilder.Entity<IdentityUserRole<string>>().ToTable("UserRoles", "security");
+            modelBuilder.Entity<IdentityUserClaim<string>>().ToTable("UserClaims", "security");
+            modelBuilder.Entity<IdentityUserLogin<string>>().ToTable("UserLogins", "security");
+            modelBuilder.Entity<IdentityRoleClaim<string>>().ToTable("RoleClaims", "security");
+            modelBuilder.Entity<IdentityUserToken<string>>().ToTable("UserTokens", "security");
+
             modelBuilder.Entity<OrderItems>(entity =>
             {
 
@@ -37,7 +48,6 @@ namespace Order_Food_Online.Data
                 .HasForeignKey(i => i.OrderId)
                 .OnDelete(DeleteBehavior.NoAction);
 
-            base.OnModelCreating(modelBuilder);
         }
         
     }

@@ -24,6 +24,11 @@ namespace Order_Food_Online.Repository
             return _context.Items.Include(i => i.Resturants).ToList();
         }
 
+        public List<Items> GetAll(int id)
+        {
+            return _context.Items.Include(i => i.Resturants).Where(e=>e.ResturantId== id).ToList();
+        }
+
         public Items GetDetails(int id)
         {
             if (_context.Items == null)
@@ -50,7 +55,6 @@ namespace Order_Food_Online.Repository
             item.ItemName = updatedItem.ItemName;
             item.ImageUrl = updatedItem.ImageUrl;
             item.Price = updatedItem.Price;
-
             _context.SaveChangesAsync();
         }
     }
