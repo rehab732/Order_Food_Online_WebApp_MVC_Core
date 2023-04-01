@@ -13,18 +13,18 @@ namespace Order_Food_Online.Areas.Resturant.Models
 
         [ForeignKey("Customers")]
         public int CustomerId { get; set; }
-        public virtual Customers Customer { get; set; }
+        public virtual  Customers? Customer { get; set; }
         
         [ForeignKey("Resturants")]
         public int RestaurantId { get; set; }
-        public virtual Resturants Restaurant { get; set; }
+        public virtual Resturants? Restaurant { get; set; }
 
         [Required]
         public string Location { get; set; }
 
         public DateTime OrderDate { get; set; }
         public decimal TotalAmount { get; set; }
-        public virtual List<OrderItems> OrderItems { get; set; }
+        public virtual List<OrderItems>? OrderItems { get; set; }
 
 
 

@@ -19,6 +19,10 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ICRUDRepository<Items>, ItemRepoService>();
 builder.Services.AddScoped<ICRUDRepository<Resturants>, ResturantRepoService>();
+builder.Services.AddScoped<ICRUDRepository<Orders>, OrderRepoService>();
+builder.Services.AddScoped<ICRUDRepository<OrderItems>, OrderItemsRepoService>();
+
+
 
 
 var app = builder.Build();

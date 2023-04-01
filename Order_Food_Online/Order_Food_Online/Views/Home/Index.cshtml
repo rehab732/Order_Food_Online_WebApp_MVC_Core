@@ -3,4 +3,25 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
 
+
+@foreach (var item in Model) 
+{
+
+  <div class="swiper-slide event-item d-flex flex-column justify-content-end"  >
+          <div  class="card" style="  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;">
+                 <img src="assets/img/image.jpg" alt="Resto" style="width:100%;height:200px;">
+               <div  style="padding: 2px 16px;margin:auto;text-align:center;">
+            <h4><b>@item.RestName</b></h4>
+                <p>@item.RestLocation</p>
+            <a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;"   href="Resturant/Items/Resto?id=@item.Id"   >See Menu</a>
+
+       </div>
+       </div>
+       </div>
+}
+ </div>
+   <div class="swiper-pagination"></div>
+                    </div>

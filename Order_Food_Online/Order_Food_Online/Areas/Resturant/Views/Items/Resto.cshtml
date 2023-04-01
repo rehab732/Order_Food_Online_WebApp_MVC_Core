@@ -1,14 +1,10 @@
 ﻿@model IEnumerable<Order_Food_Online.Areas.Resturant.Models.Items>
-
 @{
     ViewData["Title"] = "Resto";
 }
-
+<script src="~/lib/jquery/jquery.js"></script>
+<script src="~/lib/jquery/jquery.min.js"></script>
 <h1>Resto</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -28,6 +24,7 @@
         </tr>
     </thead>
     <tbody>
+  
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -42,12 +39,37 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Resturants.RestLocation)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ItemsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ItemsId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ItemsId">Delete</a>
-            </td>
+              <td>
+                Quantity  <input name="quantityInput" id="quantityInput_@item.ItemsId" type="number" />
+                      
+
+              <button onclick="addToDictionary(@item.ItemsId, $('#quantityInput_@item.ItemsId').val())">Add ID 1 to Dictionary</button>
+              </td>
+        
+
         </tr>
 }
     </tbody>
 </table>
+
+<button> </button>
+
+
+<script>
+
+function addToDictionary(ItemsId,quantity) {
+    $.ajax({
+        url: '@Url.Action("AddToDictionary", "Home")',
+        type: 'POST',
+        data: { ItemsId: ItemsId,quantity:quantity},
+        success: function (result) {
+            alert('ID added to dictionary!'+ItemsId+""+quantity);
+        },
+        error: function () {
+            alert('Error adding ID to dictionary.');
+        }
+    });
+}
+</script>
+
+    
