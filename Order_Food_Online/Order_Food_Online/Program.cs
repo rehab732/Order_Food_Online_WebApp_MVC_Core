@@ -9,7 +9,7 @@ using Order_Food_Online.Repository;
 using Order_Food_Online.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var config = builder.Configuration;
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("myConn") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -26,7 +26,30 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICRUDRepository<Items>, ItemRepoService>();
 builder.Services.AddScoped<ICRUDRepository<Resturants>, ResturantRepoService>();
 
+builder.Services.AddAuthentication()
+   .AddGoogle(options =>
+   {
+       IConfigurationSection googleAuthNSection =
+       config.GetSection("Authentication:Google");
+       options.ClientId = googleAuthNSection["ClientId"];
+       options.ClientSecret = googleAuthNSection["ClientSecret"];
+   })
+   .AddFacebook(options =>
+   {
+       IConfigurationSection FBAuthNSection =
+       config.GetSection("Authentication:FB");
+       options.ClientId = FBAuthNSection["ClientId"];
+       options.ClientSecret = FBAuthNSection["ClientSecret"];
+   })
+    .AddMicrosoftAccount(options =>
+    {
+        IConfigurationSection Microsoft =
+        config.GetSection("Authentication:Micro");
+        options.ClientId = Microsoft["ClientId"];
+        options.ClientSecret = Microsoft["ClientSecret"];
+    });
 
+   
 
 
 
