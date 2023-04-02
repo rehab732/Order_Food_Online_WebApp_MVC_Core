@@ -15,7 +15,9 @@ namespace Order_Food_Online.Areas.Resturant.Models
         [ForeignKey("ApplicationUser")]
         public int CustomerId { get; set; }
 
+
         public virtual ApplicationUser? Customer { get; set; }
+
         
         [ForeignKey("Resturants")]
         public int RestaurantId { get; set; }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Order_Food_Online.Areas.Resturant.Models;
 using Order_Food_Online.Repository;
 
@@ -12,11 +13,15 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
     {
         public ICRUDRepository<Items> ItemRepoService { get; }
         public ICRUDRepository<Resturants> ResturantRepoService { get; }
+        public ICRUDRepository<Orders> OrdersRepoService { get; }
 
-        public ItemsController(ICRUDRepository<Items> itemRepoService, ICRUDRepository<Resturants> resturantRepoService)
+
+        //Customer 
+        public ItemsController(ICRUDRepository<Items> itemRepoService, ICRUDRepository<Resturants> resturantRepoService,ICRUDRepository<Orders> OrdersRepoService1)
         {
             ItemRepoService = itemRepoService;
             ResturantRepoService= resturantRepoService;
+            OrdersRepoService = OrdersRepoService1;
         }
 
         // GET: Resturant/Items
@@ -168,6 +173,29 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         private bool ItemsExists(int id)
         {
           return ItemRepoService.GetAll().Any(e => e.ItemsId == id);
+        }
+
+        //CustomerId here is static
+        // (order id, restaurant id, customer id, location, total price, Payment method).
+        public IActionResult ConfirmOrder(string TotalPrice,string RestaurantId)
+        {
+            ViewBag.TotalPrice =decimal.Parse(TotalPrice);
+            int RestoID = int.Parse(RestaurantId);
+            var resto = ResturantRepoService.GetbyID(RestoID);
+            ViewBag.RestName = resto.RestName;
+
+            ViewBag.RestoID = int.Parse(RestaurantId);
+            Orders orders = new Orders()
+            {
+                RestaurantId= RestoID,
+                CustomerId=1,
+                Location = "Cairo",
+                TotalAmount= decimal.Parse(TotalPrice),
+                OrderDate= DateTime.Now,
+            };
+
+            OrdersRepoService.Insert(orders);
+            return View();
         }
     }
 }
