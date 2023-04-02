@@ -13,5 +13,7 @@
         public void Update(int id, T updatedItem);
 
         public void Delete(T item);
+
+        public T GetbyID(int id);
     }
 }

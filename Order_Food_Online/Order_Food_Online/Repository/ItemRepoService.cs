@@ -29,6 +29,12 @@ namespace Order_Food_Online.Repository
             return _context.Items.Include(i => i.Resturants).Where(e=>e.ResturantId== id).ToList();
         }
 
+        public Items GetbyID(int id)
+        {
+
+            return _context.Items.Where(e=>e.ItemsId==id).FirstOrDefault();
+        }
+
         public Items GetDetails(int id)
         {
             if (_context.Items == null)

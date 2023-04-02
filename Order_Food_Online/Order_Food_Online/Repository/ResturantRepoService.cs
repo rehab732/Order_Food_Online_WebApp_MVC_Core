@@ -12,6 +12,11 @@ namespace Order_Food_Online.Repository
         {
             _context = context;
         }
+        public Resturants GetbyID(int id)
+        {
+            return _context.Resturants.Find(id);
+
+        }
 
         public void Delete(Resturants rest)
         {
