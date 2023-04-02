@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Order_Food_Online.Areas.Customer.Models;
 using Order_Food_Online.Areas.Resturant.Models;
+using Order_Food_Online.Models;
+
 namespace Order_Food_Online.Areas.Resturant.Models
 {
     public class Orders
@@ -11,9 +12,12 @@ namespace Order_Food_Online.Areas.Resturant.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [ForeignKey("Customers")]
+        [ForeignKey("ApplicationUser")]
         public int CustomerId { get; set; }
-        public virtual  Customers? Customer { get; set; }
+
+
+        public virtual ApplicationUser? Customer { get; set; }
+
         
         [ForeignKey("Resturants")]
         public int RestaurantId { get; set; }

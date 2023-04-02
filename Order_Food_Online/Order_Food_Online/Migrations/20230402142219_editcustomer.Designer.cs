@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Order_Food_Online.Data;
 
@@ -11,9 +12,11 @@ using Order_Food_Online.Data;
 namespace Order_Food_Online.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230402142219_editcustomer")]
+    partial class editcustomer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -176,6 +179,53 @@ namespace Order_Food_Online.Migrations
                     b.ToTable("Admins");
                 });
 
+            modelBuilder.Entity("Order_Food_Online.Areas.Customer.Models.Customers", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CardNum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("City")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
+
+                    b.Property<string>("SecondName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Customers");
+                });
+
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Items", b =>
                 {
                     b.Property<int>("ItemsId")
@@ -238,6 +288,9 @@ namespace Order_Food_Online.Migrations
                     b.Property<string>("CustomerId1")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int?>("CustomersId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Location")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -254,6 +307,8 @@ namespace Order_Food_Online.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId1");
+
+                    b.HasIndex("CustomersId");
 
                     b.HasIndex("RestaurantId");
 
@@ -461,6 +516,10 @@ namespace Order_Food_Online.Migrations
                         .WithMany("Orders")
                         .HasForeignKey("CustomerId1");
 
+                    b.HasOne("Order_Food_Online.Areas.Customer.Models.Customers", null)
+                        .WithMany("Orders")
+                        .HasForeignKey("CustomersId");
+
                     b.HasOne("Order_Food_Online.Areas.Resturant.Models.Resturants", "Restaurant")
                         .WithMany()
                         .HasForeignKey("RestaurantId")
@@ -470,6 +529,11 @@ namespace Order_Food_Online.Migrations
                     b.Navigation("Customer");
 
                     b.Navigation("Restaurant");
+                });
+
+            modelBuilder.Entity("Order_Food_Online.Areas.Customer.Models.Customers", b =>
+                {
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Items", b =>
