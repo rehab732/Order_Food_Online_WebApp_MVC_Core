@@ -29,6 +29,12 @@ namespace Order_Food_Online.Repository
             throw new NotImplementedException();
         }
 
+        public Orders GetbyID(int id)
+        {
+            return _context.Orders.Find(id);
+
+        }
+
         public Orders GetDetails(int id)
         {
             if (_context.Orders == null)

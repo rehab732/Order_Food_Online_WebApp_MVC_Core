@@ -26,6 +26,11 @@ namespace Order_Food_Online.Repository
             throw new NotImplementedException();
         }
 
+        public OrderItems GetbyID(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public OrderItems GetDetails(int id)
         {
             throw new NotImplementedException();

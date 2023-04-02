@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Order_Food_Online.Areas.Resturant.Models.Items>
+
+@{
+    ViewData["Title"] = "CheckOut";
+    Dictionary<int,int> items = ViewBag.Items;
+    Decimal TotalPrice = 0;
+    var RestaurantId=ViewBag.RestaurantId;
+
+}
+
+<h1>CheckOut</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ItemName
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Total Amount
+            </th>
+             <th>
+                Quantity
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+       
+@foreach (var item in items) {
+
+            var itemItself = Model.Where(e => e.ItemsId == item.Key).First();
+            var itemName =  itemItself.ItemName;
+            var itemPrice = itemItself.Price;
+           
+
+        <tr>
+            <td>
+                     @itemName
+            </td>
+            <td>
+                       @itemPrice 
+            </td>
+            <td>
+                     @(itemPrice*item.Value)
+            </td>
+             <td>
+                    @item.Value
+             </td>
+                 @{
+                     TotalPrice += (itemPrice * item.Value);
+                 }
+                
+            </tr>
+}
+    </tbody>
+</table
+<div style="margin:auto;text-align:center;">
+<p>Total Price @TotalPrice</p>
+
+<a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;" href="https://localhost:44385/Resturant/Items/ConfirmOrder?TotalPrice=@TotalPrice&RestaurantId=@RestaurantId">Confirm  Order</a> 
+    <a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;" href="https://localhost:44385/Home">Cance lOrder</a>  
+
+</div>                                                                                                                                                                                                 
+
+@*            int https://localhost:44385/Resturant/Orders/ConfirmOrder?TotalPrice=480.00&RestoID=RestoID
+*@
