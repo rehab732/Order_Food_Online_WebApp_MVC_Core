@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Order_Food_Online.Areas.Admin.Models;
-using Order_Food_Online.Areas.Customer.Models;
 using Order_Food_Online.Areas.Resturant.Models;
 using Order_Food_Online.Models;
 
@@ -14,7 +13,7 @@ namespace Order_Food_Online.Data
             : base(options)
         {
         }
-        public DbSet<Customers> Customers { get; set; }
+        public DbSet<ApplicationUser> Customers { get; set; }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<OrderItems> OrdersItems { get; set; }
         public DbSet<Resturants> Resturants { get; set; }

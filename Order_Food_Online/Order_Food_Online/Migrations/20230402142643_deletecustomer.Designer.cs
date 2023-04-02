@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Order_Food_Online.Data;
 
@@ -11,9 +12,11 @@ using Order_Food_Online.Data;
 namespace Order_Food_Online.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230402142643_deletecustomer")]
+    partial class deletecustomer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -173,7 +176,7 @@ namespace Order_Food_Online.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Admins", (string)null);
+                    b.ToTable("Admins");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Items", b =>
@@ -203,7 +206,7 @@ namespace Order_Food_Online.Migrations
 
                     b.HasIndex("ResturantId");
 
-                    b.ToTable("Items", (string)null);
+                    b.ToTable("Items");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.OrderItems", b =>
@@ -221,7 +224,7 @@ namespace Order_Food_Online.Migrations
 
                     b.HasIndex("ItemId");
 
-                    b.ToTable("OrdersItems", (string)null);
+                    b.ToTable("OrdersItems");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Orders", b =>
@@ -258,7 +261,7 @@ namespace Order_Food_Online.Migrations
 
                     b.HasIndex("RestaurantId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Areas.Resturant.Models.Resturants", b =>
@@ -283,7 +286,7 @@ namespace Order_Food_Online.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Resturants", (string)null);
+                    b.ToTable("Resturants");
                 });
 
             modelBuilder.Entity("Order_Food_Online.Models.ApplicationUser", b =>

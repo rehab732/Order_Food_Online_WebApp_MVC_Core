@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Build.Framework;
+using Order_Food_Online.Areas.Resturant.Models;
 using System.ComponentModel.DataAnnotations;
 using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
 
@@ -31,6 +32,8 @@ namespace Order_Food_Online.Models
 
         [Required]
         public UserCity City { get; set; }
+
+        public virtual List<Orders> Orders { get; set; }
 
 
     }
