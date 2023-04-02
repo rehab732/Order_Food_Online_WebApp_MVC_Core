@@ -12,20 +12,21 @@ namespace Order_Food_Online.Areas.Resturant.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [ForeignKey("Customers")]
+        [ForeignKey("ApplicationUser")]
         public int CustomerId { get; set; }
-        public virtual ApplicationUser Customer { get; set; }
+
+        public virtual ApplicationUser? Customer { get; set; }
         
         [ForeignKey("Resturants")]
         public int RestaurantId { get; set; }
-        public virtual Resturants Restaurant { get; set; }
+        public virtual Resturants? Restaurant { get; set; }
 
         [Required]
         public string Location { get; set; }
 
         public DateTime OrderDate { get; set; }
         public decimal TotalAmount { get; set; }
-        public virtual List<OrderItems> OrderItems { get; set; }
+        public virtual List<OrderItems>? OrderItems { get; set; }
 
 
 
