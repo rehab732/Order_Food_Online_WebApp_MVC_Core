@@ -61,6 +61,7 @@
                  <td>
                     @item.Value
                  </td>
+                 
                 @{
                     TotalPrice += (itemPrice * item.Value);
                 }
@@ -68,18 +69,17 @@
                 </tr>
         }
     </tbody>
-</table
+</table>
 <div style="margin:auto;text-align:center;">
-<p>Total Price @TotalPrice</p>
+<p style="font-weight:bold; font-size:30px;">Total Price @TotalPrice</p>
 
 <a id = "linkmap" style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;" href="https://localhost:44385/Resturant/Items/ConfirmOrder?TotalPrice=@TotalPrice&RestaurantId=@RestaurantId">Confirm  Order</a> 
-    <a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;" href="https://localhost:44385/Home">Cance lOrder</a>  
+    <a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;" href="https://localhost:44385/Home">Cancel Order</a>  
 
 </div>
 
 @*<button id="show-map-btn">Show Map</button>
-*@<div>
-
+*@
     <div>
     <input  id="search" type="text" placeholder="Search for location">
     </div>

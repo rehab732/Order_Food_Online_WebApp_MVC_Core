@@ -20,7 +20,7 @@ namespace Order_Food_Online.Services
 
 			var stmtpClient=new SmtpClient(host: "smtp-mail.outlook.com")
 			{
-				Port=587,
+				Port= 587,
 				Credentials=new NetworkCredential(fromMail,frompass),
 				EnableSsl=true
 			};

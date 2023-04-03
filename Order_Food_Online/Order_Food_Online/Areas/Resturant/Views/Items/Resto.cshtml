@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Order_Food_Online.Areas.Resturant.Models.Items>
+﻿
+@model IEnumerable<Order_Food_Online.Areas.Resturant.Models.Items>
 @{
     ViewData["Title"] = "Resto";
 }
@@ -40,10 +41,11 @@
                 @Html.DisplayFor(modelItem => item.Resturants.RestLocation)
             </td>
               <td>
-                Quantity  <input name="quantityInput" id="quantityInput_@item.ItemsId" type="number" />
+                Quantity  <input name="quantityInput" id="quantityInput_@item.ItemsId" type="number" min="1" />
                       
 
               <button onclick="addToDictionary(@item.ItemsId, $('#quantityInput_@item.ItemsId').val())">ADDTOCart</button>
+                    <label id="ItemAdded_@item.ItemsId" style="visibility:hidden ;color:green; font-weight:bold;">&radic;</label>
               </td>
         
 
@@ -54,7 +56,7 @@
 
 <div  style="text-align:center;margin:auto;">
    
- <a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;"  href="CheckOut"   >CheckOut</a>
+ <a  id="btnCheck" style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: none;"  href="CheckOut"   >CheckOut</a>
 
 </div>
 
@@ -65,9 +67,11 @@ function addToDictionary(ItemsId,quantity) {
         url: '@Url.Action("AddToDictionary", "Items")',
         type: 'POST',
         data: { ItemsId: ItemsId,quantity:quantity},
-        success: function (result) {
-            alert('ID added to dictionary!'+ItemsId+""+quantity);
-        },
+            success: function (result) {
+                $('#ItemAdded_' + ItemsId).css("visibility", "visible");
+                $('#btnCheck').css("display", "inline-block");
+            },
+
         error: function () {
             alert('Error adding ID to dictionary.');
         }
