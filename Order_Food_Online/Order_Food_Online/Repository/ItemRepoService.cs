@@ -52,7 +52,7 @@ namespace Order_Food_Online.Repository
         public void Insert(Items item)
         {
             _context.Items.Add(item);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
         }
 
         public void Update(int id, Items updatedItem)
