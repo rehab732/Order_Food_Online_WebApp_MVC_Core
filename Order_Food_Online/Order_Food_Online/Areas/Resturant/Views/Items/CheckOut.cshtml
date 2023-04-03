@@ -2,14 +2,21 @@
 
 @{
     ViewData["Title"] = "CheckOut";
-    Dictionary<int,int> items = ViewBag.Items;
+    Dictionary<int, int> items = ViewBag.Items;
     Decimal TotalPrice = 0;
-    var RestaurantId=ViewBag.RestaurantId;
+    var RestaurantId = ViewBag.RestaurantId;
 
     var placeName = "test";
 
 
 }
+
+<style>
+    #linkmap{
+        pointer-events: none;
+    }
+</style>
+
 
 <h1>CheckOut</h1>
 
@@ -31,34 +38,35 @@
         </tr>
     </thead>
     <tbody>
-       
-@foreach (var item in items) {
+
+        @foreach (var item in items)
+        {
 
             var itemItself = Model.Where(e => e.ItemsId == item.Key).First();
-            var itemName =  itemItself.ItemName;
+            var itemName = itemItself.ItemName;
             var itemPrice = itemItself.Price;
-            
-           
 
-        <tr>
-            <td>
-                     @itemName
-            </td>
-            <td>
-                       @itemPrice 
-            </td>
-            <td>
-                     @(itemPrice*item.Value)
-            </td>
-             <td>
+
+
+            <tr>
+                <td>
+                    @itemName
+                </td>
+                <td>
+                    @itemPrice 
+                </td>
+                <td>
+                    @(itemPrice * item.Value)
+                </td>
+                 <td>
                     @item.Value
-             </td>
-                 @{
-                     TotalPrice += (itemPrice * item.Value);
-                 }
-                
-            </tr>
-}
+                 </td>
+                @{
+                    TotalPrice += (itemPrice * item.Value);
+                }
+
+                </tr>
+        }
     </tbody>
 </table
 <div style="margin:auto;text-align:center;">
@@ -103,6 +111,7 @@
 
           var selectedPlaceLink = document.getElementById('linkmap');
 
+
         // Bias the search results towards current map's viewport.
         map.addListener('bounds_changed', function () {
             searchBox.setBounds(map.getBounds());
@@ -123,8 +132,17 @@
 
             console.log(typeof(placeName));
 
+            if(placeName.length > 0){
+            console.log(placeName.length);
+            //.style['pointer-events'] = 'auto';
+            selectedPlaceLink.style['pointer-events'] = 'auto';
+
+            }
+
             // Do something with the selected place (e.g. display its name)
             console.log(placeName);
+
+
 
             selectedPlaceLink.href = 'https://localhost:44385/Resturant/Items/ConfirmOrder?TotalPrice=@TotalPrice&RestaurantId=@RestaurantId&Location=' + encodeURIComponent(place.name);
             // Clear out the old markers.
@@ -173,8 +191,8 @@
     });
 </script>
 
-@*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwPu6REj5eyipioZ1BumzrCNnFLmKsqJg"></script>*@
+    @*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwPu6REj5eyipioZ1BumzrCNnFLmKsqJg"></script>*@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwPu6REj5eyipioZ1BumzrCNnFLmKsqJg&libraries=places"></script>
 
-@*            int https://localhost:44385/Resturant/Orders/ConfirmOrder?TotalPrice=480.00&RestoID=RestoID
+    @*            int https://localhost:44385/Resturant/Orders/ConfirmOrder?TotalPrice=480.00&RestoID=RestoID
 *@

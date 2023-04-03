@@ -13,17 +13,20 @@ namespace Order_Food_Online.Repository
         }
         public void Delete(OrderItems item)
         {
-            throw new NotImplementedException();
+            _context.Remove(item);
+            _context.SaveChangesAsync();
         }
 
         public List<OrderItems> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.OrdersItems.ToList();
+
         }
 
         public List<OrderItems> GetAll(int id)
         {
             throw new NotImplementedException();
+
         }
 
         public OrderItems GetbyID(int id)
@@ -38,7 +41,8 @@ namespace Order_Food_Online.Repository
 
         public void Insert(OrderItems item)
         {
-            throw new NotImplementedException();
+            _context.OrdersItems.Add(item);
+            _context.SaveChangesAsync();
         }
 
         public void Update(int id, OrderItems updatedItem)
