@@ -77,6 +77,11 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="/Home">Home</a></li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li><a href="/Resturant/Resturants">Resturant</a></li>
+                        <li><a href="/Resturant/Items">Items</a></li>
+                    }
                     <li><a href="#about">About</a></li>‏
                     <li><a href="#contact">Contact</a></li>‏
                     @if (SignInManager.IsSignedIn(User))
