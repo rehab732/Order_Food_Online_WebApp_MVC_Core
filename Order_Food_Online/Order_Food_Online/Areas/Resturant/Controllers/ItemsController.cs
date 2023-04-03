@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -64,6 +65,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         }
 
         // GET: Resturant/Items/Create
+        [Authorize(Roles = "Admin")]
         [Route("Resturant/Items/Create")]
         public IActionResult Create()
         {
@@ -77,6 +79,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         [Route("Resturant/Items/Create")]
         public async Task<IActionResult> Create([Bind("ItemsId,ItemName,ImageUrl,Price,ResturantId")] Items items)
         {
@@ -90,6 +93,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         }
 
         // GET: Resturant/Items/Edit/5
+        [Authorize(Roles = "Admin")]
         [Route("Resturant/Items/Edit")]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -112,6 +116,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         [Route("Resturant/Items/Edit")]
         public async Task<IActionResult> Edit(int ItemsId, [Bind("ItemsId,ItemName,ImageUrl,Price,ResturantId")] Items items)
         {
@@ -144,6 +149,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         }
 
         // GET: Resturant/Items/Delete/5
+        [Authorize(Roles = "Admin")]
         [Route("Resturant/Items/Delete")]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -165,6 +171,7 @@ namespace Order_Food_Online.Areas.Resturant.Controllers
         // POST: Resturant/Items/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         [Route("Resturant/Items/Delete")]
         public async Task<IActionResult> DeleteConfirmed(int ItemsId)
         {

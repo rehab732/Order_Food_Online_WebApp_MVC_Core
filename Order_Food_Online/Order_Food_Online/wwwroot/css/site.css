@@ -71,16 +71,10 @@ body {
 }
 
 /*avatar*/
-.avatar{
-    height:40px;
-    width:40px;
-    object-fit:cover;
-}
-
 
 .profilepic{
     height:350px;
-    width:350px;
+    width:100px;
     object-fit:cover;
 }
 .avatar {
