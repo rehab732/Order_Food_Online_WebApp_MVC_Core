@@ -10,9 +10,6 @@ namespace Order_Food_Online.Controllers
 {
     public class HomeController : Controller
     {
-        public static Dictionary<int, int> items = new Dictionary<int, int>();
-        public static int  RestaurantId;
-
         //ID,QUNATITY,PRICE
 
 
@@ -42,32 +39,6 @@ namespace Order_Food_Online.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-
-        public void AddToDictionary(int ItemsId, int Quantity)
-        {
-            if (!items.ContainsKey(ItemsId))
-            {
-                items.Add(ItemsId, Quantity);
-            }
-            else
-            {
-
-                items[ItemsId] = Quantity;
-            }
-
-            var item = ItemRepoService.GetbyID(ItemsId);
-            RestaurantId = item.ResturantId;
-
-        }
-
-        public IActionResult CheckOut()
-        {
-            //int https://localhost:44385/Resturant/Orders/ConfirmOrder?TotalPrice=480.00&RestoID=RestoID
-            ViewBag.Items = items;
-            ViewBag.RestaurantId = RestaurantId;
-            return View(ItemRepoService.GetAll());
         }
     }
 }

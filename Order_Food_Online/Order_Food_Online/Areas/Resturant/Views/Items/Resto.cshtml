@@ -54,7 +54,7 @@
 
 <div  style="text-align:center;margin:auto;">
    
- <a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;"   href=" https://localhost:44385/Home/CheckOut"   >CheckOut</a>
+ <a  style=" width:200px; background-color: red;color: white; border: 2px solid white;padding: 20px 20px;text-align: center;text-decoration: none;display: inline-block;"  href="CheckOut"   >CheckOut</a>
 
 </div>
 
@@ -62,7 +62,7 @@
 
 function addToDictionary(ItemsId,quantity) {
     $.ajax({
-        url: '@Url.Action("AddToDictionary", "Home")',
+        url: '@Url.Action("AddToDictionary", "Items")',
         type: 'POST',
         data: { ItemsId: ItemsId,quantity:quantity},
         success: function (result) {
